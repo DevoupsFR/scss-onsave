@@ -1,17 +1,17 @@
 {
   "name": "scss-onsave",
   "main": "./lib/scss-onsave",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Run scss command when you save a file",
   "keywords": [
-  	"scss",
-	"save",
-	"file",
-	"run",
-	"watch",
-	"watcher",
-	"track",
-	"execute"
+    "scss",
+    "save",
+    "file",
+    "run",
+    "watch",
+    "watcher",
+    "track",
+    "execute"
   ],
   "activationCommands": {
     "atom-workspace": "scss-onsave:force-compile"
@@ -21,6 +21,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
