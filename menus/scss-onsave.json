@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Scss onSave",
+          "submenu": [
+            {
+              "label": "Force compile",
+              "command": "scss-onsave:force-compile"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
