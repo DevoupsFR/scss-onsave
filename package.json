@@ -1,7 +1,7 @@
 {
   "name": "scss-onsave",
   "main": "./lib/scss-onsave",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Run scss command when you save a file",
   "keywords": [
     "scss",
@@ -13,9 +13,6 @@
     "track",
     "execute"
   ],
-  "activationCommands": {
-    "atom-workspace": "scss-onsave:force-compile"
-  },
   "repository": "https://github.com/FoxinouFR/scss-onsave",
   "license": "MIT",
   "engines": {
