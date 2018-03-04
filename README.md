@@ -14,6 +14,8 @@ Use atom package manager to install atom-sass.
 
 ## Configuration file
 
+You need to create a configuration file named `.scss-onsave.json` at the root of the project.
+
 The content of the `.scss-onsave.json` file must be an array of objects with the following properties:
 
 * `inputDir`: The source directory. The path is relative to `.scss-onsave.json`.
@@ -26,6 +28,8 @@ The content of the `.scss-onsave.json` file must be an array of objects with the
 * `showError` _(default to `true`)_: A boolean indicating whether the error stream should be displayed or not.
 
 ### Example ###
+
+Here is an example of a configuration file.
 
 ```
 {
