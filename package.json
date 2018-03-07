@@ -1,7 +1,7 @@
 {
   "name": "scss-onsave",
   "main": "./lib/scss-onsave",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Run scss command when you save a file",
   "keywords": [
     "scss",
