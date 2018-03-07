@@ -26,6 +26,7 @@ The content of the `.scss-onsave.json` file must be an array of objects with the
 * `showStartup` _(default to `false`)_: A boolean indicating whether a notification at startup of compilation should be displayed or not.
 * `showOutput` _(default to `false`)_: A boolean indicating whether the output stream should be displayed or not.
 * `showError` _(default to `true`)_: A boolean indicating whether the error stream should be displayed or not.
+* `charset` _(default to 'UTF-8')_: Indicate the encoding of the source files. See the `--default-encoding` parameter of the `scss` command for more information.
 
 ### Example ###
 
@@ -39,7 +40,8 @@ Here is an example of a configuration file.
 	"sourcemap":"none",
 	"showStartup":false,
 	"showOutput":false,
-	"showError":true
+	"showError":true,
+	"charset":"UTF-8"
 }
 ```
 
