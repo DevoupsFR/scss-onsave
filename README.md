@@ -2,9 +2,15 @@
 Atom package to run the scss command when you save a `.scss` or `.sass` file.
 
 ## Dependencies
-* Sass Ruby gem.
+* Sass command.
+To install this dependency, execute `npm install -g sass`
+For more information, please visit: https://sass-lang.com/install
 
-To install this dependency, execute `gem install sass`
+### Update 0.3.0 ###
+
+Since version 0.3, the module uses to compile the command installed with npm.
+For compatibility reasons, we have left the operation with "Sass Ruby gem" by default.
+**Please specify the parameter `useNpmSass` to `true` if you use the npm command.**
 
 ## Installation
 
@@ -20,9 +26,9 @@ The content of the `.scss-onsave.json` file must be an array of objects with the
 
 * `inputDir`: The source directory. The path is relative to `.scss-onsave.json`.
 * `outputDir`: The destination directory. The path is relative to `.scss-onsave.json`.
-* `style` _(default to `"compressed"`)_: Sets the style of the CSS output. The value must be: `expanded`, `nested`, `compact`, `compressed`.
-* `sourcemap` _(default to `"none"`)_: Controls how sourcemaps are generated. The value must be: `none`, `auto`, `inline`, `file`.
-* `sass` _(default to `false`)_: A boolean used to compile SASS files.
+* `useNpmSass` _(default to `false`)_: This setting allows users with Rugy-sass installed to continue using this package. **Set to `true` in the case of an installation with NPM.**
+* `style` _(default to `"compressed"`)_: Sets the style of the CSS output. The value must be: `expanded`, `compressed`.
+* `sourcemap` _(default to `"none"`)_: Controls how sourcemaps are generated. The value must be: `none`, `relative`, `absolute`.
 * `showStartup` _(default to `false`)_: A boolean indicating whether a notification at startup of compilation should be displayed or not.
 * `showOutput` _(default to `false`)_: A boolean indicating whether the output stream should be displayed or not.
 * `showError` _(default to `true`)_: A boolean indicating whether the error stream should be displayed or not.
@@ -35,7 +41,8 @@ Here is an example of a configuration file.
 {
 	"inputDir": "resources/scss/",
 	"outputDir": "public/css/",
-	"style":"compressed";
+	"useNpmSass": true,
+	"style":"compressed",
 	"sourcemap":"none",
 	"showStartup":false,
 	"showOutput":false,
@@ -46,4 +53,3 @@ Here is an example of a configuration file.
 ### Minify JS ###
 
 You can use the [js-onsave](https://atom.io/packages/js-onsave) package that works the same way for Javascript files.
-
